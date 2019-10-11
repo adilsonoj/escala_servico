@@ -1,0 +1,17 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 800px;
+    padding: 0 0 0 10px;
+    background-color: rgb(69, 73, 73);
+}
+
+.bars{
+    font-size: 36px;
+}
+.bars:hover{
+    color: white;
+    cursor: pointer;
+}
