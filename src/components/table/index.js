@@ -6,7 +6,7 @@ import './styles.css'
 export default class table extends Component {
     geraCalendario = () =>{
         const arr=[]
-        for(let i = 0; i<moment().daysInMonth(); i++){
+        for(let i = 1; i<=moment().daysInMonth(); i++){
             arr.push(i)
         }
         return arr;
@@ -20,8 +20,9 @@ export default class table extends Component {
     console.log(this.geraCalendario().forEach(el=>console.log(el)))
     return (
         <div className='container'>
-        {this.geraCalendario().forEach(element => (
-            <div className="dia">segunda</div>
+        {this.geraCalendario().map(element => (
+            <div className="dia">{element}</div>
+           
             )) }
       
           
